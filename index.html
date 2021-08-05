@@ -38,74 +38,70 @@
           </div>
     </div>
     <div class="javacontainer">
+
         <!-- Slideshow container -->
-    <div class="slideshow-container">
+        <div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <img src="Images/FallTrio_3630.jpg" style="width:100%" class="javaimage">
-    </div>
+    <!-- Images in Slideshow -->
+            <div class="mySlides fade">
+                <img src="Images/FallTrio_3630.jpg" style="width:100%" class="javaimage">
+            </div>
   
-    <div class="mySlides fade">
-      <img src="Images/SpottedTeal_3630.jpg" style="width:100%" class="javaimage">
-    </div>
+             <div class="mySlides fade">
+                <img src="Images/SpottedTeal_3630.jpg" style="width:100%" class="javaimage">
+            </div>
   
-    <div class="mySlides fade">
-      <img src="Images/Klisscactus_3630.jpg" style="width:100%" class="javaimage">
-    </div>
+            <div class="mySlides fade">
+                <img src="Images/Klisscactus_3630.jpg" style="width:100%" class="javaimage">
+            </div>
 
-    <div class="mySlides fade">
-        <img src="Images/SpottedMango_3630.jpg" style="width:100%" class="javaimage">
-      </div>
+            <div class="mySlides fade">
+                <img src="Images/SpottedMango_3630.jpg" style="width:100%" class="javaimage">
+            </div>
 
-    <div class="mySlides fade">
-        <img src="Images/BobtanicalGroup_3630.jpg" style="width:100%" class="javaimage">
-      </div>
+            <div class="mySlides fade">
+                <img src="Images/BobtanicalGroup_3630.jpg" style="width:100%" class="javaimage">
+         </div>
   
-  </div>
-  <br>
-  
+    </div>
+    <br>
   <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-  </div>
-
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
     
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
     
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
     
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
+        }
+        for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
     </script>
     </div>
-    <!-- <div class="featurecontainer"> -->
-        <!-- <img src="/FinalProject2/Images/Kliss_BOBtanicalFallTrio-p1fakeo0hf1v0lmbv1p8nh71g2t.jpg" class="feature-img" alt="Image of 3 glass art pieces"> -->
-    <!-- </div> -->
     <div>
         <img src="Images/BestKlissPhoto.jpg" class="aboutmeimage" alt="Photo of Bob and Laure Kliss">
     </div>
@@ -119,7 +115,7 @@
     </div>
     <div class="contactformcontainer">
         <form action="action_page.php" class="form1">
-            <p class="titletext"> <strong>Make your own artpiece!</strong> </p>
+            <p class="titletext"> <strong>Make your own artpiece!</strong></p>
             <br>
             <label for="fname" class="label">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name...">
@@ -154,6 +150,17 @@
             <a href="https://www.facebook.com/KliszewskiGlass" target="_blank" class="fa fa-facebook"></a>
             <a href="https://twitter.com/habitatskate?lang=en" target="_blank" class="fa fa-twitter"></a>
             <a href="https://www.instagram.com/klissglass/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Styled By: Jordan Kliss</p>
+        <p><a href="klissj559@gmail.com" class="emaillink">klissj559@gmail.com</a></p>
+        <div>
+            <ul class="menu">
+                <a href="https://www.facebook.com/jordan.kliss" target="_blank" class="fa2 fa-facebook2"></a>
+                <a href="https://twitter.com/habitatskate?lang=en" target="_blank" class="fa2 fa-twitter2"></a>
+                <a href="https://www.instagram.com/jordankliss/" target="_blank" class="fa2 fa-instagram2"></a>
+            </ul>
         </div>
     </div>
 </body>
