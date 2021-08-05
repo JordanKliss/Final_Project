@@ -5,7 +5,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-image: url(/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
+    background-image: url(../Images/Backroundforfinalproject.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-    background-image: url(/Images/adrien-olichon-_GH9LwhlSO4-unsplash.jpg);
+    background-image: url(../Images/Backroundforfinalproject.jpg);
     background-position: center;
     width: 100%;
     height: 9%;
@@ -298,10 +298,12 @@ input[type=submit] {
     text-align: right;
     font-size: x-small;
 }
+
 .emaillink {
     text-decoration: none;
     color: #ccc;
 }
+
 .menu{
     display: flex;
     align-items: center;
@@ -309,12 +311,14 @@ input[type=submit] {
     margin-top: -1.3%;
     margin-left: 85%;
 }
+
 .fa2 {
     text-align: center;
     padding: 10px;
     margin: 1px;
     border-radius: 50%;
 }
+
 .fa-facebook2 {
     background: #3B5998;
     color: white;
