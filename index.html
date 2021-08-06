@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -9,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/ed05230baa.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/finalproject_tweek.css">
+        <link rel="stylesheet" href="/css/finalprojecttweek.css">
         <title>Kliszewski Glass</title>
     </head>
     <body>
@@ -43,27 +42,22 @@
             <!-- Slideshow container -->
             <div class="slideshow-container">
 
-            <!-- Images in Slideshow -->
+                <!-- Images in Slideshow -->
                 <div class="mySlides fade">
                     <img src="Images/FallTrio_3630.jpg" style="width:100%" class="javaimage">
                 </div>
-    
                 <div class="mySlides fade">
                     <img src="Images/SpottedTeal_3630.jpg" style="width:100%" class="javaimage">
                 </div>
-    
                 <div class="mySlides fade">
                     <img src="Images/Klisscactus_3630.jpg" style="width:100%" class="javaimage">
                 </div>
-
                 <div class="mySlides fade">
                     <img src="Images/SpottedMango_3630.jpg" style="width:100%" class="javaimage">
                 </div>
-
                 <div class="mySlides fade">
                     <img src="Images/BobtanicalGroup_3630.jpg" style="width:100%" class="javaimage">
             </div>
-    
         </div>
         <br>
         <!-- The dots/circles -->
@@ -85,7 +79,7 @@
             function currentSlide(n) {
             showSlides(slideIndex = n);
             }
-        
+
             function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -95,9 +89,11 @@
             for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";  
             }
+            
             for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
             }
+
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
             }
